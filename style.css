@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+body {
+  background: url(/images/bg-pattern-top.svg);
+  background-image: url(/images/bg-pattern-bottom.svg);
+  background-color: #19a2ae;
+}
+
+.main-content {
+  box-sizing: border-box;
+  margin: 10% auto;
+  background: url(/images/bg-pattern-card.svg);
+  width: 25%;
+  border-radius: 20px;
+  /* position: relative; */
+  padding-top: 168px;
+}
+#info > div > p:first-child,
+#social > div > p:first-child {
+  font-weight: 700;
+}
+
+#info > div > p > span,
+div > p:last-child {
+  color: #969696;
+}
+
+#info,
+#social {
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+#info {
+  position: relative;
+  padding: 50px;
+  /* border-radius: 10px 10px 0 0; */
+}
+
+#info > div:last-child {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#info > div > p:last-child {
+  margin-top: 10px;
+}
+
+#vic > img {
+  border: 5px #ffffff solid;
+  border-radius: 50px;
+  display: block;
+  position: absolute;
+  top: -25%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#social {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px #000000 solid;
+  justify-content: space-between;
+  border-radius: 0 0 20px 20px;
+  padding: 30px;
+}
