@@ -12,17 +12,40 @@ body {
   background: url(/images/bg-pattern-top.svg);
   background-image: url(/images/bg-pattern-bottom.svg);
   background-color: #19a2ae;
+  background-blend-mode: screen;
 }
 
 .main-content {
   box-sizing: border-box;
   margin: 10% auto;
-  background: url(/images/bg-pattern-card.svg);
-  width: 25%;
+
+  width: fit-content;
   border-radius: 20px;
-  /* position: relative; */
-  padding-top: 168px;
+  display: flex;
+  flex-direction: column;
 }
+
+.main-content > div {
+  flex: 1;
+}
+
+.main-content > div:first-child {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .main-content > div:first-child > div {
+  min-height: 50%;
+} */
+
+#top {
+  height: 140px;
+  background: url(/images/bg-pattern-card.svg);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 #info > div > p:first-child,
 #social > div > p:first-child {
   font-weight: 700;
@@ -66,10 +89,19 @@ div > p:last-child {
 }
 
 #social {
+  width: fit-content;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: row;
-  border-top: 1px #000000 solid;
-  justify-content: space-between;
+  border-top: 1px #969696 solid;
   border-radius: 0 0 20px 20px;
   padding: 30px;
+  gap: 50px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
